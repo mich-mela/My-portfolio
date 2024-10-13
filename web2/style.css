@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popens", sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background: url('background3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover:before{
+    width: 100%;
+}
+.home{
+    display: grid;
+    position: relative;
+    align-items: center;
+    grid-template-columns: repeat(1, 1 fr);
+    padding: 80px 18%;
+}
+.home-text h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: #fff;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.home-text p{
+    color: #ffffffbf;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: #ffffffbf;
+    color: #00f;
+    border-radius: 4px;
+    transition: ease .40s;
+    text-decoration: none;
+}
+.home-btn:hover{
+    background: #fff;
+    transform: scale(1.1);
+}
